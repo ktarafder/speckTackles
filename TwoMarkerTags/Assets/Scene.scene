@@ -9,6 +9,7 @@
     - !<own> dbd149af-6bf5-4b88-8ee0-28d1811ba682
     - !<own> 6debbe72-f2f1-4cb1-80d3-809f000c1153
     - !<own> b09692fc-2674-4b77-9e3d-e3e189914598
+    - !<own> c2e9fdc3-e117-432a-a972-638daa85f0cb
   layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
     userLayers:
       []
@@ -900,14 +901,14 @@
   Enabled: true
   ScriptAsset: !<reference> 17d0cf2d-c96b-42fd-8a63-cf7e9751e882
   ScriptInputsDefault:
-    {}
+    horizontalSquish: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
       squishObject: !<reference.SceneObject> 6f9260d3-d992-40c7-89de-80d036888b13
       verticalSquish: !<float> 1.000000
-      horizontalSquish: 0.600000
+      horizontalSquish: !<float> 1.000000
   ScriptTypes:
     "":
       {}
@@ -1182,7 +1183,7 @@
   PrefabRemaps:
     []
   Name: Label
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -2400,6 +2401,23 @@
     - !<own> 518a56fe-84cc-457a-ac44-665f19946cf7
     - !<own> abedccd5-a6f5-435b-a2e8-957826752e57
     - !<own> f2f4d20a-68c7-4e43-87cc-f7d35fd6a121
+- !<ScriptComponent/29e571dd-49cc-4fb7-b459-8a0cfe25b839>
+  PrefabRemaps:
+    []
+  Name: sliderCalcualtor
+  Enabled: true
+  ScriptAsset: !<reference> 4713432b-4040-4cb5-9e5a-8d9b2f928d1e
+  ScriptInputsDefault:
+    slider: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      slider: !<reference.SliderObject> 00000000-0000-0000-0000-000000000000
+      textComponent: !<reference.Text> 8538674b-bdda-47f6-a87a-5676d33f2a21
+  ScriptTypes:
+    "":
+      {}
 - !<RenderMeshVisual/2a30125f-13fc-4b98-b43f-cdf599c2ede0>
   PrefabRemaps:
     []
@@ -4956,7 +4974,6 @@
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
-    - !<own> 99075b90-78a8-4904-9d1c-96aadc490f11
     - !<own> a762d926-e47e-4322-9d1d-1e20f558821f
     - !<own> 5772ff9e-cf87-4b10-8d74-d9329635251a
     - !<own> 65119375-c44f-4915-a239-b0036b65f3c0
@@ -5418,6 +5435,69 @@
   Components:
     - !<own> 128b0b1d-cdd6-4c6e-97d9-62b52d4f812a
     - !<own> f681d152-e0fd-4de6-b14b-8387fcda0aac
+- !<Text/6b22a05c-9737-44b9-9a13-f1c2593c2551>
+  PrefabRemaps:
+    []
+  Name: Text
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Left
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Text: Climate
+  Editable: false
+  ShowEditingPreview: true
+  TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
+  SizeToFit: false
+  FontSize: 79
+  Font: !<reference> a89eab43-3257-4a4e-8633-5d1697c846d0
+  LayoutRect:
+    left: -7.500000
+    bottom: -2.250000
+    right: 7.500000
+    top: 2.250000
+  OverflowVertical: Overflow
+  OverflowHorizontal: Overflow
+  Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+    Mode: Solid
+    Color: {x: 0.700008, y: 0.700008, z: 0.700008, w: 1.000000}
+    Texture: !<reference> 00000000-0000-0000-0000-000000000000
+  Outline: !<OutlineSettings/00000000-0000-0000-0000-000000000000>
+    Enabled: false
+    Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+    Size: 0.250000
+  Dropshadow: !<DropshadowSettings/00000000-0000-0000-0000-000000000000>
+    Enabled: false
+    Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+    OffsetX: 0.250000
+    OffsetY: 0.250000
+  Background: !<BackgroundSettings/00000000-0000-0000-0000-000000000000>
+    Enabled: false
+    Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+    Margins:
+      left: 0.000000
+      bottom: 0.000000
+      right: 0.000000
+      top: 0.000000
+    CornerRadius: 0.000000
+  AdvancedLayout: !<TextAdvancedLayout/00000000-0000-0000-0000-000000000000>
+    ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+    LetterSpacing: 0.000000
+    LineSpacing: 1.000000
+    CapitalizationOverride: None
+  DepthTest: false
 - !<ScriptComponent/6b48be3a-9f72-4a82-ab70-4e7f5fc7343a>
   PrefabRemaps:
     []
@@ -5936,6 +6016,7 @@
   Children:
     - !<own> f068508f-eef6-4772-8053-e6ea8764f3df
     - !<own> 9670f597-5ca8-4bd9-9986-bbd47d5e3ea3
+    - !<own> 99075b90-78a8-4904-9d1c-96aadc490f11
   Components:
     - !<own> 0a25e18e-bc7a-4443-9af9-79102f5c43db
     - !<own> 309ad85c-9c6f-419f-be50-a07896299c44
@@ -6445,6 +6526,69 @@
   ScriptTypes:
     "":
       {}
+- !<Text/8538674b-bdda-47f6-a87a-5676d33f2a21>
+  PrefabRemaps:
+    []
+  Name: Text
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Text: 60°
+  Editable: false
+  ShowEditingPreview: true
+  TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
+  SizeToFit: false
+  FontSize: 79
+  Font: !<reference> a89eab43-3257-4a4e-8633-5d1697c846d0
+  LayoutRect:
+    left: -7.500000
+    bottom: -2.250000
+    right: 7.500000
+    top: 2.250000
+  OverflowVertical: Overflow
+  OverflowHorizontal: Overflow
+  Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+    Mode: Solid
+    Color: {x: 0.700008, y: 0.700008, z: 0.700008, w: 1.000000}
+    Texture: !<reference> 00000000-0000-0000-0000-000000000000
+  Outline: !<OutlineSettings/00000000-0000-0000-0000-000000000000>
+    Enabled: false
+    Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+    Size: 0.250000
+  Dropshadow: !<DropshadowSettings/00000000-0000-0000-0000-000000000000>
+    Enabled: false
+    Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+    OffsetX: 0.250000
+    OffsetY: 0.250000
+  Background: !<BackgroundSettings/00000000-0000-0000-0000-000000000000>
+    Enabled: false
+    Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+    Margins:
+      left: 0.000000
+      bottom: 0.000000
+      right: 0.000000
+      top: 0.000000
+    CornerRadius: 0.000000
+  AdvancedLayout: !<TextAdvancedLayout/00000000-0000-0000-0000-000000000000>
+    ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+    LetterSpacing: 0.000000
+    LineSpacing: 1.000000
+    CapitalizationOverride: None
+  DepthTest: false
 - !<ScriptComponent/85685b2e-a171-44cf-b3d0-88e9f9528f55>
   PrefabRemaps:
     []
@@ -6627,7 +6771,6 @@
     stepBehavior: true
     _stepSize: true
     toggleDuration: true
-    editEventCallbacks: true
     customFunctionForOnHoverEnter: true
     onHoverEnterFunctionNames: true
     customFunctionForOnHoverExit: true
@@ -6636,7 +6779,6 @@
     onSlideStartFunctionNames: true
     customFunctionForOnSlideEnd: true
     onSlideEndFunctionNames: true
-    customFunctionForOnValueUpdate: true
     onValueUpdateFunctionNames: true
     customFunctionForOnMinValueReached: true
     onMinValueReachedFunctionNames: true
@@ -6655,7 +6797,7 @@
       sliderMin: !<reference.SceneObject> b660dca1-2c7a-49f5-b93b-d20fa87a627f
       sliderMax: !<reference.SceneObject> 2b0cbf61-8c95-4d8d-832b-00eb2fa10ef3
       _sliderKnob: !<reference.SceneObject> 6f9260d3-d992-40c7-89de-80d036888b13
-      editEventCallbacks: false
+      editEventCallbacks: true
       customFunctionForOnHoverEnter: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       onHoverEnterFunctionNames: !<string[]>
         []
@@ -6668,7 +6810,7 @@
       customFunctionForOnSlideEnd: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       onSlideEndFunctionNames: !<string[]>
         []
-      customFunctionForOnValueUpdate: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      customFunctionForOnValueUpdate: !<reference.ScriptComponent> 29e571dd-49cc-4fb7-b459-8a0cfe25b839
       onValueUpdateFunctionNames: !<string[]>
         []
       customFunctionForOnMinValueReached: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
@@ -7352,14 +7494,16 @@
   Enabled: true
   Layers: 1
   LocalTransform:
-    position: {x: 0.000000, y: 1.000000, z: -60.000000}
+    position: {x: -10.000000, y: -15.000000, z: 0.000000}
     rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 1.250000, y: 1.250000, z: 1.250000}
+    scale: {x: 3.010000, y: 3.000000, z: 1.250000}
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 6a1f7204-f89a-4c07-8f0e-2a76e5207b52
     - !<own> 6f9260d3-d992-40c7-89de-80d036888b13
     - !<own> 8325db5a-76dc-4926-91b6-79b3e0f2fa42
+    - !<own> f1a28e47-3f1e-440c-bfb7-d193d9385206
+    - !<own> 9d27850d-df98-4987-a532-27ef1f9a3c1b
   Components:
     - !<own> 3edb2a14-fc50-42cd-8d29-507673e10630
     - !<own> 884c37c0-f1a6-492a-9885-ab598c52d642
@@ -7417,6 +7561,21 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/9d27850d-df98-4987-a532-27ef1f9a3c1b>
+  PrefabRemaps:
+    []
+  Name: Temperature
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 7.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 8538674b-bdda-47f6-a87a-5676d33f2a21
 - !<SceneObject/9dedaa98-754f-4653-bf5f-bec695afd0bd>
   PrefabRemaps:
     []
@@ -8789,6 +8948,21 @@
   Components:
     - !<own> a1934755-c496-4664-a0cc-3297ba9e214a
     - !<own> eb821b92-3f17-4a34-b1d8-a0d8ac1c8fd4
+- !<SceneObject/c2e9fdc3-e117-432a-a972-638daa85f0cb>
+  PrefabRemaps:
+    []
+  Name: sliderCalcualtor
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 29e571dd-49cc-4fb7-b459-8a0cfe25b839
 - !<Text/c32234e2-149d-442f-bc96-05133dde8abf>
   PrefabRemaps:
     []
@@ -9449,7 +9623,7 @@
     []
   Name: Marker Tracking
   Enabled: true
-  Marker: !<reference> 3ae32bbc-8386-4dc5-9e30-28e20ea79a19
+  Marker: !<reference> 9637dad5-a533-4c00-8015-c5937ff99888
 - !<ScreenTransform/d660528f-269c-47e6-a7ae-0313f2124ea6>
   PrefabRemaps:
     []
@@ -10142,7 +10316,7 @@
   PrefabRemaps:
     []
   Name: Label
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: -10.581100, y: 0.000000, z: 0.034996}
@@ -10762,6 +10936,21 @@
     bottom: 0.000000
     right: 0.000000
     top: 0.000000
+- !<SceneObject/f1a28e47-3f1e-440c-bfb7-d193d9385206>
+  PrefabRemaps:
+    []
+  Name: TempDescription
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -5.500000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 6b22a05c-9737-44b9-9a13-f1c2593c2551
 - !<SceneObject/f2bb482b-aad7-40f0-bb34-67d0c8ba15e9>
   PrefabRemaps:
     []
@@ -11169,12 +11358,12 @@
   Enabled: true
   ScriptAsset: !<reference> 1ad7da86-2c32-418c-bdf1-b7150c07c912
   ScriptInputsDefault:
-    {}
+    hoverAudioTrack: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-      hoverAudioTrack: !<reference.AudioTrackAsset> 97bf97ae-b2da-47d7-bde6-003f597fe888
+      hoverAudioTrack: !<reference.AudioTrackAsset> 00000000-0000-0000-0000-000000000000
       triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
       triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
   ScriptTypes:
