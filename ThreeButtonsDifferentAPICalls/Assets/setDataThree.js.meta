@@ -25,10 +25,12 @@
   MaxVisibility: Editable
   ScriptInputsHidden:
     rsm: false
+    textComponent: false
   ScriptTypesHidden:
     {}
   DefaultScriptInputs:
     - rsm: !<reference.RemoteServiceModule> 00000000-0000-0000-0000-000000000000
+      textComponent: !<reference.Text> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}

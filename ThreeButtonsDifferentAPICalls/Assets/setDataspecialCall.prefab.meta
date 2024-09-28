@@ -19,12 +19,13 @@
   Enabled: true
   ScriptAsset: !<reference> c86f9365-c3f0-4837-8c28-baf2ce0e3333
   ScriptInputsDefault:
-    {}
+    textComponent: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
       rsm: !<reference.RemoteServiceModule> 94b8da8d-723c-47df-891d-3aa4ddbceba6
+      textComponent: !<reference.Text> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     "":
       {}
