@@ -1,0 +1,84 @@
+- !<ObjectPrefab/8b6d8274-2bf8-4167-8270-80fbef202abe>
+  PackagePath: ""
+  objects:
+    - !<own> 7070b522-167f-4e7b-9c76-d1f7d049534d
+  LazyLoading: false
+  RetainAssets: true
+- !<MarkerTrackingComponent/09e5aa62-6c86-44eb-ba44-97396f988c3f>
+  PrefabRemaps:
+    []
+  Name: Marker Tracking
+  Enabled: true
+  Marker: !<reference> 91fadeb1-36a0-4ed6-9660-92f0d4d241a5
+- !<ScriptComponent/4f4d0f6c-b4bf-4a1e-820d-0e8307c9018f>
+  PrefabRemaps:
+    []
+  Name: ImageTrackingController
+  Enabled: true
+  ScriptAsset: !<reference> 29cb1fc7-074b-4987-9015-84962f8a84b1
+  ScriptInputsDefault:
+    onMarkerFoundGlobalBehaviors: true
+    onMarkerLostGlobalBehaviors: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      markerTrackingComponent: !<reference.MarkerTrackingComponent> 09e5aa62-6c86-44eb-ba44-97396f988c3f
+      resizeObjectArray: !<reference.SceneObject[]>
+        - !<reference> d927fb17-b325-4c6f-ae7b-db6839bc0972
+      sendTriggers: true
+      onMarkerFoundGlobalBehaviors: !<reference.ScriptComponent[]>
+        []
+      onMarkerLostGlobalBehaviors: !<reference.ScriptComponent[]>
+        []
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/7070b522-167f-4e7b-9c76-d1f7d049534d>
+  PrefabRemaps:
+    []
+  Name: Marker_Image_PUT_UNDER_MAIN_CAM
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> d927fb17-b325-4c6f-ae7b-db6839bc0972
+  Components:
+    - !<own> 09e5aa62-6c86-44eb-ba44-97396f988c3f
+    - !<own> 4f4d0f6c-b4bf-4a1e-820d-0e8307c9018f
+- !<Image/d14d2066-1ce8-442c-9e40-19cbbb637a0a>
+  PrefabRemaps:
+    []
+  Name: Image 2
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Fit
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 7f0fa608-1be4-4909-a160-70be49be76fd
+  FlipX: false
+  FlipY: false
+  Pivot: {x: 0.000000, y: 0.000000}
+- !<SceneObject/d927fb17-b325-4c6f-ae7b-db6839bc0972>
+  PrefabRemaps:
+    []
+  Name: "Tracked Image [REPLACE_ME]"
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> d14d2066-1ce8-442c-9e40-19cbbb637a0a
