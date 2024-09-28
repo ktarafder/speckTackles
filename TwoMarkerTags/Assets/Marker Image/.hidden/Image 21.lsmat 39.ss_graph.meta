@@ -1,0 +1,14 @@
+- !<AssetImportMetadata/20b4cca0-1f09-4497-b456-e59a2075effc>
+  ImportedAssetIds:
+    ShaderGraph: !<reference> 47a48545-06d2-499e-bab3-26551d86e844
+  ImporterName: ShaderGraphPassImporter
+  PrimaryAsset: !<reference> 47a48545-06d2-499e-bab3-26551d86e844
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    {}
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/e2b92f35-fe4f-4632-badc-1f132428026a>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
