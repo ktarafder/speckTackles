@@ -674,12 +674,12 @@
   Enabled: true
   ScriptAsset: !<reference> cd6d18c6-a687-4fed-aba6-d395234ea37b
   ScriptInputsDefault:
-    rsm: true
+    {}
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-      rsm: !<reference.RemoteServiceModule> 00000000-0000-0000-0000-000000000000
+      rsm: !<reference.RemoteServiceModule> 94b8da8d-723c-47df-891d-3aa4ddbceba6
   ScriptTypes:
     "":
       {}
@@ -1596,6 +1596,48 @@
   Components:
     - !<own> 95c14adc-87b7-4dbf-966d-9df0dfef0064
     - !<own> 2c10ed34-341d-44e5-8672-4de5c33a1054
+- !<SceneObject/238e26cc-2de0-402b-9c11-54c83596aa38>
+  PrefabRemaps:
+    []
+  Name: UI Panel
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 1da7f812-08b9-4c7b-9b8b-996de47227b9
+    - !<own> 25fbf907-f494-465b-9e38-f0d5d36b1606
+    - !<own> 4853a455-e6ee-499f-9759-4e3699f5cd2e
+  Components:
+    - !<own> 6f339a94-4dc9-4874-ace2-a5ded51fe41d
+    - !<own> 23964d74-484f-4a17-b876-82c38e7b2e01
+- !<ScriptComponent/23964d74-484f-4a17-b876-82c38e7b2e01>
+  PrefabRemaps:
+    []
+  Name: Billboard
+  Enabled: true
+  ScriptAsset: !<reference> 74eafc23-e98b-4073-ab18-82ca532994e3
+  ScriptInputsDefault:
+    _yAxisEnabled: true
+    _axisBufferDegrees: true
+    _axisEasing: true
+    duration: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      _xAxisEnabled: true
+      _yAxisEnabled: true
+      _zAxisEnabled: true
+      _axisBufferDegrees: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
+      _axisEasing: !<Vec3> {x: 1.000000, y: 1.000000, z: 1.000000}
+      duration: 0.033000
+  ScriptTypes:
+    "":
+      {}
 - !<ScriptComponent/24cf881f-0af4-45c8-97a1-e8d6a7511d5a>
   PrefabRemaps:
     []
@@ -2264,9 +2306,7 @@
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
-    - !<own> 1da7f812-08b9-4c7b-9b8b-996de47227b9
-    - !<own> 25fbf907-f494-465b-9e38-f0d5d36b1606
-    - !<own> 4853a455-e6ee-499f-9759-4e3699f5cd2e
+    - !<own> 238e26cc-2de0-402b-9c11-54c83596aa38
   Components:
     - !<own> edcfb331-3fa8-43fd-a245-5056cc78eca1
     - !<own> 545a09d1-ac76-4f39-aa57-949f8955d746
@@ -2642,7 +2682,7 @@
   PrefabRemaps:
     []
   Name: ContainerFrameUI
-  Enabled: false
+  Enabled: true
   Layers: 1
   LocalTransform:
     position: {x: 55.000000, y: -5.000000, z: -65.000000}
@@ -2653,6 +2693,7 @@
     - !<own> 0156bc55-f043-46bd-818f-230c707d106c
   Components:
     - !<own> e8e77f57-4004-4bb3-bfe9-9afb428c9569
+    - !<own> 8a5d90e3-49a6-4be5-a3f4-8b0debc79459
 - !<ScreenTransform/434f621d-de0d-4d34-8b9a-917c716ef4ff>
   PrefabRemaps:
     []
@@ -4209,7 +4250,7 @@
   PrefabRemaps:
     []
   Name: "[EXAMPLES] UI"
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
@@ -4364,12 +4405,12 @@
   Enabled: true
   ScriptAsset: !<reference> 8e0956ae-45ac-4a01-8ae3-f0d6ce94557d
   ScriptInputsDefault:
-    rsm: true
+    {}
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-      rsm: !<reference.RemoteServiceModule> 00000000-0000-0000-0000-000000000000
+      rsm: !<reference.RemoteServiceModule> 94b8da8d-723c-47df-891d-3aa4ddbceba6
   ScriptTypes:
     "":
       {}
@@ -4775,6 +4816,32 @@
     []
   Components:
     []
+- !<ScriptComponent/6f339a94-4dc9-4874-ace2-a5ded51fe41d>
+  PrefabRemaps:
+    []
+  Name: UI Panel
+  Enabled: true
+  ScriptAsset: !<reference> f34c3d96-7720-4d49-809b-d109941cf8d8
+  ScriptInputsDefault:
+    interactable: true
+    renderOrderOverride: true
+    editAdvancedOptions: true
+    printDebugStatements: true
+    printWarningStatements: true
+    disableTouchEventsInput: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      interactable: true
+      renderOrderOverride: 0
+      editAdvancedOptions: false
+      printDebugStatements: false
+      printWarningStatements: false
+      disableTouchEventsInput: false
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/6f9260d3-d992-40c7-89de-80d036888b13>
   PrefabRemaps:
     []
@@ -5778,6 +5845,32 @@
     bottom: 0.000000
     right: 0.000000
     top: 0.000000
+- !<ScriptComponent/8a5d90e3-49a6-4be5-a3f4-8b0debc79459>
+  PrefabRemaps:
+    []
+  Name: Billboard
+  Enabled: true
+  ScriptAsset: !<reference> 74eafc23-e98b-4073-ab18-82ca532994e3
+  ScriptInputsDefault:
+    _xAxisEnabled: true
+    _yAxisEnabled: true
+    _zAxisEnabled: true
+    _axisBufferDegrees: true
+    _axisEasing: true
+    duration: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      _xAxisEnabled: false
+      _yAxisEnabled: true
+      _zAxisEnabled: false
+      _axisBufferDegrees: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
+      _axisEasing: !<Vec3> {x: 1.000000, y: 1.000000, z: 1.000000}
+      duration: 0.033000
+  ScriptTypes:
+    "":
+      {}
 - !<ColliderComponent/8ad90747-3d27-48af-ab5d-a37ade3de76f>
   PrefabRemaps:
     []
@@ -6406,7 +6499,7 @@
 - !<SceneObject/a3f038cf-97b3-446e-8205-783188ccbd66>
   PrefabRemaps:
     []
-  Name: setDataOne
+  Name: setDataTwo
   Enabled: true
   Layers: 1
   LocalTransform:
@@ -7841,7 +7934,7 @@
 - !<SceneObject/cd5b81f3-5fd5-408c-9b2d-557d4474561e>
   PrefabRemaps:
     []
-  Name: setData
+  Name: setDataOne
   Enabled: true
   Layers: 1
   LocalTransform:
