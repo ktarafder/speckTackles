@@ -1,0 +1,84 @@
+- !<ObjectPrefab/eb73d854-cdbc-4abe-9efe-fafab3ea6226>
+  PackagePath: Marker_Image_PUT_UNDER_MAIN_CAM
+  objects:
+    - !<own> e87d4009-cd79-40fe-b574-55a903d8c9a3
+  LazyLoading: false
+  RetainAssets: true
+- !<ScriptComponent/0c5284b9-9ede-4260-925c-cdb00fd010c3>
+  PrefabRemaps:
+    []
+  Name: ImageTrackingController
+  Enabled: true
+  ScriptAsset: !<reference> a7ecb5a8-cfa6-4ad3-8838-56ee045e70c3
+  ScriptInputsDefault:
+    onMarkerFoundGlobalBehaviors: true
+    onMarkerLostGlobalBehaviors: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      markerTrackingComponent: !<reference.MarkerTrackingComponent> 92d37988-4ef2-4d9b-a805-bc25f0dcf6d6
+      resizeObjectArray: !<reference.SceneObject[]>
+        - !<reference> 9930ee09-bed6-43b4-b693-057de4284aa3
+      sendTriggers: true
+      onMarkerFoundGlobalBehaviors: !<reference.ScriptComponent[]>
+        []
+      onMarkerLostGlobalBehaviors: !<reference.ScriptComponent[]>
+        []
+  ScriptTypes:
+    "":
+      {}
+- !<Image/7d12a34b-3a0a-45b0-81bc-410c87c8f304>
+  PrefabRemaps:
+    []
+  Name: Image 2
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Fit
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> f4e3dfeb-aa62-4702-bca3-8890c0865a85
+  FlipX: false
+  FlipY: false
+  Pivot: {x: 0.000000, y: 0.000000}
+- !<MarkerTrackingComponent/92d37988-4ef2-4d9b-a805-bc25f0dcf6d6>
+  PrefabRemaps:
+    []
+  Name: Marker Tracking
+  Enabled: true
+  Marker: !<reference> 1c7d905e-8197-4767-9bf5-2e6077304263
+- !<SceneObject/9930ee09-bed6-43b4-b693-057de4284aa3>
+  PrefabRemaps:
+    []
+  Name: "Tracked Image [REPLACE_ME]"
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 7d12a34b-3a0a-45b0-81bc-410c87c8f304
+- !<SceneObject/e87d4009-cd79-40fe-b574-55a903d8c9a3>
+  PrefabRemaps:
+    []
+  Name: Marker_Image_PUT_UNDER_MAIN_CAM
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 9930ee09-bed6-43b4-b693-057de4284aa3
+  Components:
+    - !<own> 92d37988-4ef2-4d9b-a805-bc25f0dcf6d6
+    - !<own> 0c5284b9-9ede-4260-925c-cdb00fd010c3

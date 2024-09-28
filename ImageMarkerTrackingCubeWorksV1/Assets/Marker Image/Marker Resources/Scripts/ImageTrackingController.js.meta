@@ -1,0 +1,45 @@
+- !<AssetImportMetadata/4abf8c31-0c13-492b-81a5-941a8d3cf820>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> a7ecb5a8-cfa6-4ad3-8838-56ee045e70c3
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> a7ecb5a8-cfa6-4ad3-8838-56ee045e70c3
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    JavaScriptAsset: !<own> b2967424-c43b-4ac9-87dc-62367dddec11
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/0eca55ea-1d58-488c-a571-763de3db9ffc>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/b2967424-c43b-4ac9-87dc-62367dddec11>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    markerTrackingComponent: false
+    onMarkerFoundGlobalBehaviors: false
+    onMarkerLostGlobalBehaviors: false
+    resizeObjectArray: false
+    sendTriggers: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - markerTrackingComponent: !<reference.MarkerTrackingComponent> 00000000-0000-0000-0000-000000000000
+      resizeObjectArray: !<reference.SceneObject[]>
+        []
+      sendTriggers: false
+      onMarkerFoundGlobalBehaviors: !<reference.ScriptComponent[]>
+        []
+      onMarkerLostGlobalBehaviors: !<reference.ScriptComponent[]>
+        []
+  ScriptTypes:
+    -
+      {}

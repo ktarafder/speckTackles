@@ -1,0 +1,18 @@
+- !<AssetCache/c4ae98b7-fc8e-2b4b-7e3d-393b93795139>
+  AssetFiles:
+    d8889c42-ab42-4a78-aebc-26ff041c2c9b: 395c3424-e267-4a9e-849a-a1261941a10b/c4ae98b7fc8e2b4b7e3d393b93795139/Data/monster_body.mesh
+  AssetCurrentFiles:
+    d8889c42-ab42-4a78-aebc-26ff041c2c9b: 395c3424-e267-4a9e-849a-a1261941a10b/c4ae98b7fc8e2b4b7e3d393b93795139/Data/monster_body.mesh
+  Assets:
+    - !<FileMesh/d8889c42-ab42-4a78-aebc-26ff041c2c9b>
+      PackagePath: ""
+      Info: !<MeshInfo/00000000-0000-0000-0000-000000000000>
+        Triangles: 2734
+        Vertices: 1975
+        Blendshapes:
+          []
+        Joints: 66
+  SourceHash: c4ae98b7fc8e2b4b7e3d393b93795139
+  FileHash: 65f94a0dfa4f34ff7ed365d2f4ce34f3
+  NativePackageItems:
+    []

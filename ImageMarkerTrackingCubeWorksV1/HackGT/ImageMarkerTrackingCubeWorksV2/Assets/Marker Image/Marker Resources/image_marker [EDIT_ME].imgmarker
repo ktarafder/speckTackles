@@ -1,0 +1,4 @@
+- !<ImageMarker/1c7d905e-8197-4767-9bf5-2e6077304263>
+  PackagePath: "Marker Resources/image_marker [EDIT_ME]"
+  MarkerHeight: 21.000000
+  MarkerTexture: !<reference> 430b0aaf-e848-4f48-ab7f-dbd402c8f9bd

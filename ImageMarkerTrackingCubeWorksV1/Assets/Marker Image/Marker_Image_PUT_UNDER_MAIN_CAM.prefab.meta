@@ -1,0 +1,106 @@
+- !<AssetImportMetadata/9363e4e2-7208-48d3-87a6-6c560214a43c>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> eb73d854-cdbc-4abe-9efe-fafab3ea6226
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> eb73d854-cdbc-4abe-9efe-fafab3ea6226
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    ObjectPrefab: !<own> 6e282839-1386-4ff2-9688-5128b98d8ab2
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/122319a0-df0d-4b76-8ad3-71af515ef3fc>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<MarkerTrackingComponent/4da72bb7-b738-419c-a53b-362e19fff9a4>
+  PrefabRemaps:
+    []
+  Name: Marker Tracking
+  Enabled: true
+  Marker: !<reference> 1c7d905e-8197-4767-9bf5-2e6077304263
+- !<ObjectPrefabAssetData/6e282839-1386-4ff2-9688-5128b98d8ab2>
+  SourceRemaps:
+    - 0c5284b9-9ede-4260-925c-cdb00fd010c3: d85f2030-c99a-4731-89b8-b2eacd9aaf88
+    - 7d12a34b-3a0a-45b0-81bc-410c87c8f304: f7e8b8e1-6f5c-4abf-b665-e4f82dc1540c
+    - 92d37988-4ef2-4d9b-a805-bc25f0dcf6d6: 4da72bb7-b738-419c-a53b-362e19fff9a4
+    - 9930ee09-bed6-43b4-b693-057de4284aa3: f321c48b-d864-4df5-9cbb-b9db2e92e63c
+    - e87d4009-cd79-40fe-b574-55a903d8c9a3: bb385b0f-25e5-4337-ada6-10748488b828
+  SourceState: !<own> dbc107a5-0c3a-4eb3-bc1b-5506e3fe5134
+- !<SceneObject/bb385b0f-25e5-4337-ada6-10748488b828>
+  PrefabRemaps:
+    []
+  Name: Marker_Image_PUT_UNDER_MAIN_CAM
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> f321c48b-d864-4df5-9cbb-b9db2e92e63c
+  Components:
+    - !<own> 4da72bb7-b738-419c-a53b-362e19fff9a4
+    - !<own> d85f2030-c99a-4731-89b8-b2eacd9aaf88
+- !<ScriptComponent/d85f2030-c99a-4731-89b8-b2eacd9aaf88>
+  PrefabRemaps:
+    []
+  Name: ImageTrackingController
+  Enabled: true
+  ScriptAsset: !<reference> a7ecb5a8-cfa6-4ad3-8838-56ee045e70c3
+  ScriptInputsDefault:
+    onMarkerFoundGlobalBehaviors: true
+    onMarkerLostGlobalBehaviors: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      markerTrackingComponent: !<reference.MarkerTrackingComponent> 4da72bb7-b738-419c-a53b-362e19fff9a4
+      resizeObjectArray: !<reference.SceneObject[]>
+        - !<reference> f321c48b-d864-4df5-9cbb-b9db2e92e63c
+      sendTriggers: true
+      onMarkerFoundGlobalBehaviors: !<reference.ScriptComponent[]>
+        []
+      onMarkerLostGlobalBehaviors: !<reference.ScriptComponent[]>
+        []
+  ScriptTypes:
+    "":
+      {}
+- !<ObjectPrefab/dbc107a5-0c3a-4eb3-bc1b-5506e3fe5134>
+  PackagePath: Marker_Image_PUT_UNDER_MAIN_CAM
+  objects:
+    - !<own> bb385b0f-25e5-4337-ada6-10748488b828
+  LazyLoading: false
+  RetainAssets: true
+- !<SceneObject/f321c48b-d864-4df5-9cbb-b9db2e92e63c>
+  PrefabRemaps:
+    []
+  Name: "Tracked Image [REPLACE_ME]"
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> f7e8b8e1-6f5c-4abf-b665-e4f82dc1540c
+- !<Image/f7e8b8e1-6f5c-4abf-b665-e4f82dc1540c>
+  PrefabRemaps:
+    []
+  Name: Image 2
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Fit
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> f4e3dfeb-aa62-4702-bca3-8890c0865a85
+  FlipX: false
+  FlipY: false
+  Pivot: {x: 0.000000, y: 0.000000}

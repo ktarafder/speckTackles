@@ -1,0 +1,152 @@
+- !<ObjectPrefab/acfbf74d-e2d6-4e7d-9f8e-b9e9fa7a96da>
+  PackagePath: ""
+  objects:
+    - !<own> 016c4ee1-6252-4efd-8012-e61556604ec5
+  LazyLoading: false
+  RetainAssets: true
+- !<SceneObject/016c4ee1-6252-4efd-8012-e61556604ec5>
+  PrefabRemaps:
+    []
+  Name: Marker_Cube_PUT_UNDER_MAIN_CAM
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 467224ef-aa8c-411a-b0d1-c66dc58b00b0
+    - !<own> 36f9b908-c20f-4ddd-8d16-dc07dc3490b1
+    - !<own> 833d9d99-430f-4166-8d49-556645b6111f
+  Components:
+    - !<own> 3d5e47fe-cdfd-4e7a-ae1c-096778bfc631
+    - !<own> 7f836367-38ac-4478-be8c-a5e621e662ac
+- !<RenderMeshVisual/1372d79e-d2e4-4d17-885a-b923a33c1594>
+  PrefabRemaps:
+    []
+  Name: Mesh Visual 2
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: Receiver
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> f481027d-d17d-45cc-94be-4793dbf96d76
+  Mesh: !<reference> 2e65479e-915a-456b-98c9-cf458edacb07
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/36f9b908-c20f-4ddd-8d16-dc07dc3490b1>
+  PrefabRemaps:
+    []
+  Name: Occluder
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> a4388a50-d810-4d85-aaee-3620bf93b8f5
+- !<MarkerTrackingComponent/3d5e47fe-cdfd-4e7a-ae1c-096778bfc631>
+  PrefabRemaps:
+    []
+  Name: Marker Tracking
+  Enabled: true
+  Marker: !<reference> 11f41bcd-42c1-4641-8eee-7e3ba62adb48
+- !<SceneObject/467224ef-aa8c-411a-b0d1-c66dc58b00b0>
+  PrefabRemaps:
+    []
+  Name: Matte Shadow
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 1372d79e-d2e4-4d17-885a-b923a33c1594
+- !<ScriptComponent/7f836367-38ac-4478-be8c-a5e621e662ac>
+  PrefabRemaps:
+    []
+  Name: EnableLightShadows
+  Enabled: true
+  ScriptAsset: !<reference> bf9800af-d34d-4fd3-85c6-1c3e05e72f86
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      autoEnableLightShadows: true
+      lightSource: !<reference.LightSource> 0005641c-028d-463e-0000-000000014b59
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/833d9d99-430f-4166-8d49-556645b6111f>
+  PrefabRemaps:
+    []
+  Name: Box
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 2.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 0.300000, y: 0.300000, z: 0.300000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> dd7fc161-cef0-4bc2-b926-b23b15ccd83d
+- !<RenderMeshVisual/a4388a50-d810-4d85-aaee-3620bf93b8f5>
+  PrefabRemaps:
+    []
+  Name: Mesh Visual 2
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: Receiver
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> d957838a-931d-42ba-9bf3-83e39c1efcdb
+  Mesh: !<reference> 2e65479e-915a-456b-98c9-cf458edacb07
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<RenderMeshVisual/dd7fc161-cef0-4bc2-b926-b23b15ccd83d>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: Caster
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 4205a543-f8f4-4f75-ba4d-772fb431832f
+  Mesh: !<reference> d717a6fe-aa23-4a4b-8ead-9be41055aa87
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
