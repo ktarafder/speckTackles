@@ -1,0 +1,37 @@
+- !<ObjectPrefab/ae56168c-900c-4dc6-b6ec-691412eb83ae>
+  PackagePath: ""
+  objects:
+    - !<own> 342bd021-e093-4a81-b3a6-5764e3df9124
+  LazyLoading: false
+  RetainAssets: true
+- !<SceneObject/342bd021-e093-4a81-b3a6-5764e3df9124>
+  PrefabRemaps:
+    []
+  Name: setDataspecialCall
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> efa18855-c716-46e7-99c0-9e544de9987e
+- !<ScriptComponent/efa18855-c716-46e7-99c0-9e544de9987e>
+  PrefabRemaps:
+    []
+  Name: setData
+  Enabled: true
+  ScriptAsset: !<reference> c86f9365-c3f0-4837-8c28-baf2ce0e3333
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      rsm: !<reference.RemoteServiceModule> 94b8da8d-723c-47df-891d-3aa4ddbceba6
+  ScriptTypes:
+    "":
+      {}
