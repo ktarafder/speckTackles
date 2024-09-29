@@ -1,0 +1,36 @@
+- !<AssetImportMetadata/1a5dc3d9-46fb-40d5-b893-3ca51134703e>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 51d16e8c-999d-4047-a1d1-bf41227bba3e
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 51d16e8c-999d-4047-a1d1-bf41227bba3e
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    JavaScriptAsset: !<own> 11268512-fba3-4fdf-976f-8fb7427c3e0e
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/444b61cc-39f6-4db7-8219-ed139ff76652>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/11268512-fba3-4fdf-976f-8fb7427c3e0e>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    rsm: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - rsm: !<reference.RemoteServiceModule> 94b8da8d-723c-47df-891d-3aa4ddbceba6
+      lightButton: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      touchRayProvider: !<reference.TouchRayProvider> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}

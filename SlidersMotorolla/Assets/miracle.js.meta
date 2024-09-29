@@ -1,0 +1,38 @@
+- !<AssetImportMetadata/69bca21a-2e6d-459d-b090-a1ff57376f13>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> 0c1ad2c0-1634-4bc9-a03f-195c4915da7c
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> 0c1ad2c0-1634-4bc9-a03f-195c4915da7c
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    JavaScriptAsset: !<own> cc8f0f19-04ee-48a0-bc7d-243f5dab4d64
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/ee529ef7-4e9f-4adb-8fcb-6fe46f609b1b>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/cc8f0f19-04ee-48a0-bc7d-243f5dab4d64>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    detachOnFound: false
+    markerComponent: false
+    trackMarkerOnce: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - markerComponent: !<reference.MarkerTrackingComponent> 00000000-0000-0000-0000-000000000000
+      trackMarkerOnce: true
+      detachOnFound: true
+  ScriptTypes:
+    -
+      {}
