@@ -7,6 +7,7 @@
     - !<own> cd5b81f3-5fd5-408c-9b2d-557d4474561e
     - !<own> a3f038cf-97b3-446e-8205-783188ccbd66
     - !<own> dbd149af-6bf5-4b88-8ee0-28d1811ba682
+    - !<own> 9c44c514-e77c-4536-b70c-0102ea6025f5
   layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
     userLayers:
       []
@@ -6869,6 +6870,21 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/9c44c514-e77c-4536-b70c-0102ea6025f5>
+  PrefabRemaps:
+    []
+  Name: setDataOne 1
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> a936983a-de1d-46f1-b052-93a603f87813
 - !<SceneObject/9dedaa98-754f-4653-bf5f-bec695afd0bd>
   PrefabRemaps:
     []
@@ -7203,6 +7219,22 @@
       outlineWeight: -0.250000
       meshVisuals: !<reference.RenderMeshVisual[]>
         - !<reference> 16cfa86e-da32-44bf-8b17-ac3e729ec5f7
+  ScriptTypes:
+    "":
+      {}
+- !<ScriptComponent/a936983a-de1d-46f1-b052-93a603f87813>
+  PrefabRemaps:
+    []
+  Name: setDataOne 1
+  Enabled: true
+  ScriptAsset: !<reference> 51d16e8c-999d-4047-a1d1-bf41227bba3e
+  ScriptInputsDefault:
+    rsm: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      rsm: !<reference.RemoteServiceModule> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     "":
       {}
@@ -10536,9 +10568,9 @@
       _offIcon: !<reference.SceneObject> f4cdaf94-e90f-420b-92d6-51adbe6ca4f0
       _isToggledOn: false
       editEventCallbacks: true
-      customFunctionForOnStateChanged: !<reference.ScriptComponent> ae73e620-5d12-4cbf-8e46-128ff09e6c5c
+      customFunctionForOnStateChanged: !<reference.ScriptComponent> a936983a-de1d-46f1-b052-93a603f87813
       onStateChangedFunctionNames: !<string[]>
-        - getResponse
+        - sendResponse
   ScriptTypes:
     "":
       {}

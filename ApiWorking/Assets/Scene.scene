@@ -1585,10 +1585,11 @@
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
     rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 2.250000, y: 2.250000, z: 2.250000}
+    scale: {x: 8.000000, y: 8.000000, z: 3.000000}
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 220ed076-a2d3-4a6f-b8dc-7cca99fac85d
+    - !<own> e10926db-7cee-4826-a973-a28a3cd01558
   Components:
     - !<own> 002e6a05-7f42-40be-becf-da5dd0112f62
     - !<own> 61a23825-1073-4230-a8bd-050096a17991
@@ -4057,6 +4058,69 @@
     - !<own> 430ada45-8398-45f6-a513-8cb02465f6f9
   Components:
     []
+- !<Text/5e8128af-8d0d-425a-b1de-5c30180d0dba>
+  PrefabRemaps:
+    []
+  Name: Text
+  Enabled: false
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Text: Lights Off
+  Editable: false
+  ShowEditingPreview: true
+  TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
+  SizeToFit: false
+  FontSize: 48
+  Font: !<reference> 00000000-0000-0000-0000-000000000000
+  LayoutRect:
+    left: -7.500000
+    bottom: -2.250000
+    right: 7.500000
+    top: 2.250000
+  OverflowVertical: Overflow
+  OverflowHorizontal: Overflow
+  Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+    Mode: Solid
+    Color: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    Texture: !<reference> 00000000-0000-0000-0000-000000000000
+  Outline: !<OutlineSettings/00000000-0000-0000-0000-000000000000>
+    Enabled: false
+    Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+    Size: 0.250000
+  Dropshadow: !<DropshadowSettings/00000000-0000-0000-0000-000000000000>
+    Enabled: false
+    Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+    OffsetX: 0.250000
+    OffsetY: 0.250000
+  Background: !<BackgroundSettings/00000000-0000-0000-0000-000000000000>
+    Enabled: false
+    Fill: !<TextFill/00000000-0000-0000-0000-000000000000>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+    Margins:
+      left: 0.000000
+      bottom: 0.000000
+      right: 0.000000
+      top: 0.000000
+    CornerRadius: 0.000000
+  AdvancedLayout: !<TextAdvancedLayout/00000000-0000-0000-0000-000000000000>
+    ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+    LetterSpacing: 0.000000
+    LineSpacing: 1.000000
+    CapitalizationOverride: None
+  DepthTest: false
 - !<SceneObject/5ec4fd6f-5b36-4c34-9962-9c302e97d838>
   PrefabRemaps:
     []
@@ -4519,6 +4583,23 @@
     - !<own> 4c664911-501c-4767-acd8-a518afab6df2
   Components:
     []
+- !<ScriptComponent/6d231d9c-2ae9-444a-b0a2-08404c98b7e8>
+  PrefabRemaps:
+    []
+  Name: setData
+  Enabled: true
+  ScriptAsset: !<reference> c86f9365-c3f0-4837-8c28-baf2ce0e3333
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      rsm: !<reference.RemoteServiceModule> 94b8da8d-723c-47df-891d-3aa4ddbceba6
+      textComponent: !<reference.Text> 5e8128af-8d0d-425a-b1de-5c30180d0dba
+  ScriptTypes:
+    "":
+      {}
 - !<RenderMeshVisual/6d44e550-c308-4144-b949-84db42ce4902>
   PrefabRemaps:
     []
@@ -6509,6 +6590,7 @@
   ScriptInputs:
     "":
       rsm: !<reference.RemoteServiceModule> 94b8da8d-723c-47df-891d-3aa4ddbceba6
+      textComponent: !<reference.Text> 5e8128af-8d0d-425a-b1de-5c30180d0dba
   ScriptTypes:
     "":
       {}
@@ -7905,6 +7987,22 @@
   Components:
     - !<own> 5b2fcc42-cc7f-46f7-b8ff-d8acd515f4c5
     - !<own> 86aaebb1-a475-4081-acbc-0f83ec5c7bc9
+- !<SceneObject/e10926db-7cee-4826-a973-a28a3cd01558>
+  PrefabRemaps:
+    []
+  Name: textComponent
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 3.450000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 5e8128af-8d0d-425a-b1de-5c30180d0dba
+    - !<own> 6d231d9c-2ae9-444a-b0a2-08404c98b7e8
 - !<SceneObject/e10c5a63-7ccc-4e40-b68f-525a5e0531f9>
   PrefabRemaps:
     []
