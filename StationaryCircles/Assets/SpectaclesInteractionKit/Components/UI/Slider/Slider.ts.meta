@@ -87,7 +87,7 @@
       {}
   InputLines:
     - '// @input float _minValue = 0 {"hint":"The minimum numeric value of the slider"}'
-    - '// @input float _maxValue = 1 {"hint":"The maximum numeric value of the slider"}'
+    - '// @input float _maxValue = 180 {"hint":"The maximum numeric value of the slider"}'
     - '// @input float startValue = 0.5 {"hint":"The initial numeric value of the slider"}'
     - "// @input bool stepBehavior = false {\"hint\":\"Enable this to change the slider's value in steps rather than continuously\"}"
     - "// @input float _stepSize = 0 {\"hint\":\"The size of the steps that the slider's value will be changed in.\", \"showIf\":\"stepBehavior\", \"showIfValue\":true}"
