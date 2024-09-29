@@ -1,4 +1,5 @@
 //@input Asset.RemoteServiceModule rsm
+//@input Component.Text textComponent
 
 // URL to your API endpoint for updating the light status
 const putRequest = RemoteServiceHttpRequest.create();
@@ -17,6 +18,11 @@ function onPutResponse(response) {
         // Log success and update the local counter value
         toggleCounter += 1; // Increment the counter
         var isLightOn = toggleCounter % 2 !== 0; // Determine light state: odd = On, even = Off
+        if (isLightOn) {
+            script.textComponent.textFill.color = new vec4(1, 1, .2, 1);
+        } else {
+            script.textComponent.textFill.color = new vec4(.70, .70, .70, 1);
+        }        
         print("Successfully updated light status! New status: " + (isLightOn ? "On" : "Off"));
     } else {
         print("Failed to update light status.");
