@@ -19,7 +19,7 @@ function onPutResponse(response) {
         toggleCounter += 1; // Increment the counter
         var isLightOn = toggleCounter % 2 !== 0; // Determine light state: odd = On, even = Off
         if (isLightOn) {
-            script.textComponent.textFill.color = new vec4(1, 1, .2, 1);
+            script.textComponent.textFill.color = new vec4(1, 1, 1, 1);
         } else {
             script.textComponent.textFill.color = new vec4(.70, .70, .70, 1);
         }        
