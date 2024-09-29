@@ -1,0 +1,70 @@
+- !<AssetImportMetadata/60bd87d1-3fe4-42a1-8d7b-3c5697739196>
+  ImportedAssetIds:
+    833bf2f1f73e7548: !<reference> 4d4971cd-2510-451b-ae5b-56e8f1b6b10c
+    8c3a0b6305a437ec: !<reference> 7c8a6b6e-4252-41da-a4ea-a8819b379c0b
+    Converted Scripts/ExtendedMarkerTracking.js_OnStartEvent: !<reference> 6c4b046a-26f9-4540-9a7a-0161fa84021a
+    Converted Scripts/ExtendedMarkerTracking.js_wrapped: !<reference> b0a39974-ab98-4343-af18-fd3e0ddb05c4
+    ExtendedMarkerTracking/ExtendedMarkerTracking.js: !<reference> 02930f4a-6ec5-4167-995e-df6109fcf86b
+    Extended_Marker_Tracking: !<reference> bbd55b8c-3926-4b81-b3b3-0a7843dd3bdb
+  ImporterName: LensCoreImporter
+  PrimaryAsset: !<reference> bbd55b8c-3926-4b81-b3b3-0a7843dd3bdb
+  PackageType: LegacyPackage
+  PackagePolicy: ShouldBeUnpacked
+  AssetDataMap:
+    Extended_Marker_Tracking: !<own> ffdd9154-d1fa-4792-b537-f321607328ba
+  DependentFiles:
+    []
+  ImporterSettings: !<LensCoreImporterSettings/62cfd810-7bc7-41da-a0cb-781dbe98173e>
+    PersistentIdGenerationAlgorithm: DescriptorBased
+  CompressionSettings: !<ComplexCompressionSettings/e9988157-d050-414a-96b5-795bf673163e>
+    Presets:
+      {}
+    ExtensionMappings:
+      {}
+    Overrides:
+      {}
+- !<ScriptComponent/157aca01-18ad-4a5a-a2e5-9cb58ea6fdf8>
+  PrefabRemaps:
+    []
+  Name: ExtendedMarkerTracking.js_OnStartEvent
+  Enabled: true
+  ScriptAsset: !<reference> 6c4b046a-26f9-4540-9a7a-0161fa84021a
+  ScriptInputsDefault:
+    trackMarkerOnce: true
+    detachOnFound: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      markerComponent: !<reference.MarkerTrackingComponent> 0005753c-121c-e9ac-0000-000000012934
+      trackMarkerOnce: true
+      detachOnFound: true
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/15e50438-11c1-4210-be77-fcf10869cb54>
+  PrefabRemaps:
+    []
+  Name: Extended_Marker_Tracking_-PLACE_AT_ROOT
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 157aca01-18ad-4a5a-a2e5-9cb58ea6fdf8
+- !<ObjectPrefab/b1337856-0248-43eb-8aff-f2777d901e3f>
+  PackagePath: Extended_Marker_Tracking
+  objects:
+    - !<own> 15e50438-11c1-4210-be77-fcf10869cb54
+  LazyLoading: false
+  RetainAssets: true
+- !<ObjectPrefabAssetData/ffdd9154-d1fa-4792-b537-f321607328ba>
+  SourceRemaps:
+    - 4d4971cd-2510-451b-ae5b-56e8f1b6b10c: 15e50438-11c1-4210-be77-fcf10869cb54
+    - 7c8a6b6e-4252-41da-a4ea-a8819b379c0b: 157aca01-18ad-4a5a-a2e5-9cb58ea6fdf8
+  SourceState: !<own> b1337856-0248-43eb-8aff-f2777d901e3f

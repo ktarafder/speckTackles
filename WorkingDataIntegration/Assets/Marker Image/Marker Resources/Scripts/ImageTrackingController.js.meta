@@ -29,6 +29,9 @@
     onMarkerLostGlobalBehaviors: false
     resizeObjectArray: false
     sendTriggers: false
+    markerComponent: false
+    trackMarkerOnce: false
+    detachOnFound: false
   ScriptTypesHidden:
     {}
   DefaultScriptInputs:
@@ -40,6 +43,9 @@
         []
       onMarkerLostGlobalBehaviors: !<reference.ScriptComponent[]>
         []
+      markerComponent: !<reference.MarkerTrackingComponent> 00000000-0000-0000-0000-000000000000
+      trackMarkerOnce: true
+      detachOnFound: true
   ScriptTypes:
     -
       {}
