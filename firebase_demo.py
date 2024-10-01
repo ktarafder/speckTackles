@@ -3,7 +3,7 @@ import time
 
 # Firebase configuration
 firebaseConfig = {
-    "apiKey": "AIzaSyCFV710VvBWCiL8qpqOzaWR20jGmdkHRwc",
+    "apiKey": "",
     "authDomain": "spectacles-f3020.firebaseapp.com",
     "databaseURL": "https://spectacles-f3020-default-rtdb.firebaseio.com/",
     "projectId": "spectacles-f3020",
